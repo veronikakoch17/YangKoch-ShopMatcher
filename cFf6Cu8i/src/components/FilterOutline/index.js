@@ -1,1 +1,0 @@
-export { FilterOutline } from "./FilterOutline";
