@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YangKoch™ ShopMatcher</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/convex@1.10.0/dist/browser.bundle.js"></script>
+
+</head>
+<body>
+    <header>
+      <img src="../images/shopmatcher-logo.png" alt="ShopMatcher™ Logo" id="logo">
+      <button id="showLoginPopup">Log In</button>
+      <!-- Login Popup Container -->
+<div id="loginPopup" class="login-popup">
+  <div class="login-content">
+    <span class="close-button">&times;</span>
+    <h2>Log in</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="button" id="loginBtn">Log In</button>
+    </form>
+  </div>
+</div>
+
+        <h1>YangKoch™ ShopMatcher</h1>
+    </header>
+    <main>
+      <img src="https://ae01.alicdn.com/kf/S1a1651c5d9574fcbb3f439a159a212e2u/2Pcs-34-34cm-Cotton-Dishcloth-Honeycomb-Towel-Ultra-Soft-Absorbent-Hand-Towel-Wash-Cloth-Household-Kitchen.jpg_.webp" alt="Test Image" id="testImage" style="width: 200px; height: auto;">
+    <button class="scanButton" onclick="handleButtonClick('https://ae01.alicdn.com/kf/S1a1651c5d9574fcbb3f439a159a212e2u/2Pcs-34-34cm-Cotton-Dishcloth-Honeycomb-Towel-Ultra-Soft-Absorbent-Hand-Towel-Wash-Cloth-Household-Kitchen.jpg_.webp')">Scan Image</button>
+        <!-- <section id="filterSection">
+            <button id="sortByPlatform">Sort by Platform</button>
+            <button id="sortByType">Sort by Content Type</button>
+        </section> -->
+        <section id="contentSection">
+            <div class="platform" id="tiktok">
+                <h2>TikTok</h2>
+                <button class="bulkSave">Bulk Save</button>
+                <div class="image-container"></div>
+                <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="amazon">
+                <h2>Amazon</h2>
+                <button class="bulkSave">Bulk Save</button>
+                <div class="image-container"></div>
+                <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="etsy">
+                <h2>Etsy</h2>
+                <button class="bulkSave">Bulk Save</button>
+                <div class="image-container"></div>
+                <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="temu">
+              <h2>Temu</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="aliexpress">
+              <h2>AliExpress</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="pinterest">
+              <h2>Pinterest</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="facebook">
+              <h2>Facebook</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="instagram">
+              <h2>Instagram</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="shein">
+              <h2>Shein</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+            <div class="platform" id="alibaba">
+              <h2>Alibaba</h2>
+              <button class="bulkSave">Bulk Save</button>
+              <div class="image-container"></div>
+              <!-- Content items will be added here dynamically -->
+            </div>
+           <div class="platform" id="other">
+                <h2>Other Data</h2>
+                <button class="bulkSave">Bulk Save</button>
+                <div class="image-container"></div>
+            </div>
+            <!-- Add more platforms as necessary -->
+        </section>
+    </main>
+    <footer>
+        <p>ShopMatcher™ - Shop smarter than your neighbor &#128521;</p>
+    </footer>
+    <!-- Including Convex library -->
+ 
+    <script>
+      // Update with your production Convex URL
+      const CONVEX_URL = "https://third-falcon-91.convex.cloud";
+      const client = new convex.ConvexClient(CONVEX_URL);
+    </script>
+    
+    <!-- Your JavaScript file -->
+    <script src="../js/script.js"></script>
+    <script src="path/to/convex.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+</body>
+</html>
+
